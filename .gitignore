@@ -1,0 +1,36 @@
+# Build artifacts
+/build/
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+Testing/
+compile_commands.json
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Compiled binaries and objects
+*.exe
+*.dll
+*.obj
+*.pdb
+*.lib
+*.a
+*.so
+*.dylib
+
+# Logs
+*.log
+
+# Temporary files
+*~
+*.tmp
