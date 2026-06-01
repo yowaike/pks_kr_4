@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  maze-app:
+    build: .
+    image: maze-generator
+    container_name: maze_container
+    stdin_open: true    
+    tty: true           
+    command: ./MazeGenerator
+
+  maze-tests:
+    build: .
+    image: maze-generator
+    container_name: maze_tests
+    command: ./unit_tests
+
+  maze-scenarios:
+    build: .
+    image: maze-generator
+    container_name: maze_scenarios
+    command: ./scenario_tests
+

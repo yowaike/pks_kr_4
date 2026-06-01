@@ -4,12 +4,22 @@
 - CMake 3.10+
 - Компилятор C++17 (GCC, Clang, MSVC)
 
-## Сборка и запуск
+## Сборка, запуск и тесты
 
-cmake -S . -B build
+cd C:\maze_generator
 cmake --build build
-cd build
-./MazeGenerator
+.\build\MazeGenerator.exe
+.\build\unit_tests.exe
+.\build\scenario_tests.exe
+
+# Основная программа
+docker-compose run --rm maze-app
+
+# Тесты
+docker-compose run --rm maze-tests
+
+# Сценарии
+docker-compose run --rm maze-scenarios
 
 ## Структура проекта
 
